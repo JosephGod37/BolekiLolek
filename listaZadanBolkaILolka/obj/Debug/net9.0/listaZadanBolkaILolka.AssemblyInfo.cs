@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("listaZadanBolkaILolka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b33846c24a3653f7eeba62d4d10b089880200fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a7936122e5e2dfebbc21a1c9ff3b2c190deb52a")]
 [assembly: System.Reflection.AssemblyProductAttribute("listaZadanBolkaILolka")]
 [assembly: System.Reflection.AssemblyTitleAttribute("listaZadanBolkaILolka")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
