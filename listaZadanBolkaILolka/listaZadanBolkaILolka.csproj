@@ -26,4 +26,10 @@
       <None Remove="Assets\Lolek.webp" />
       <AvaloniaResource Include="Assets\Lolek.webp" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="SummmaryWindow.axaml.cs">
+        <DependentUpon>SummaryWindow.axaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
 </Project>

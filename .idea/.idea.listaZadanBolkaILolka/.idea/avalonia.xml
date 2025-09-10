@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="listaZadanBolkaILolka/MainWindow.axaml" value="listaZadanBolkaILolka/listaZadanBolkaILolka.csproj" />
+        <entry key="listaZadanBolkaILolka/SummaryWindow.axaml" value="listaZadanBolkaILolka/listaZadanBolkaILolka.csproj" />
       </map>
     </option>
   </component>

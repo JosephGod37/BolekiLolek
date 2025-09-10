@@ -5,47 +5,68 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="listaZadanBolkaILolka.MainWindow"
         Title="listaZadanBolkaILolka">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-    <Grid HorizontalAlignment="Center">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+            <TextBlock x:Name="MyTextBlock" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Bolek i Lolek" FontWeight="Bold"
+                       FontSize="50"
+                       HorizontalAlignment="Center"
+                       Padding="15"/>
 
-        <TextBlock x:Name="MyTextBlock" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Bolek i Lolek" FontWeight="Bold"
-                   FontSize="50"
-                   HorizontalAlignment="Center"
-                   Padding="15"/>
+            <TextBox x:Name="MyTextBox" Grid.Row="1" Grid.Column="0" Width="130" Height="30" Watermark="Wpisz zadanie..."
+                     VerticalAlignment="Center"/>
 
-        <TextBox Grid.Row="1" Grid.Column="0" Width="130" Height="30" Watermark="Wpisz zadanie..."
-                 VerticalAlignment="Center"/>
-
-        <ComboBox x:Name="MyComboBox" Grid.Row="1" Grid.Column="1"  SelectionChanged="MyComboBox_OnSelectionChanged"
-                  Width="130" Margin="10,0" VerticalAlignment="Center">
-            <ComboBoxItem Content="Bolek"/>
-            <ComboBoxItem Content="Lolek"/>
-        </ComboBox>
-        <Border Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="2" Height="104" Width="68"
-                HorizontalAlignment="Center">
-        <Image x:Name="MyImage"  Height="100" Width="100" Margin="5"
-               VerticalAlignment="Center" />
-        </Border>
-        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" Margin="20" >
-            <RadioButton  Content="niski(latwe)" GroupName="priorytet" />
-            <RadioButton  Content="normalny(zwykle)" GroupName="priorytet"/>
-            <RadioButton  Content="wysoki(trudne)" GroupName="priorytet"/>
-        </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
-            <CheckBox Content="na dworze"/>
-            <CheckBox Content="potrzebny sprzet"/>
-            <CheckBox Content="z udzialem innych kolegow"/>
-        </StackPanel>
-    </Grid>
+            <ComboBox x:Name="MyComboBox" Grid.Row="1" Grid.Column="1"  SelectionChanged="MyComboBox_OnSelectionChanged"
+                      Width="130" Margin="10,0" VerticalAlignment="Center">
+                <ComboBoxItem Content="Bolek"/>
+                <ComboBoxItem Content="Lolek"/>
+            </ComboBox>
+            
+            <Border Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="2" Height="104" Width="68"
+                    HorizontalAlignment="Center">
+            <Image x:Name="MyImage"  Height="100" Width="100" Margin="5"
+                   VerticalAlignment="Center" />
+            </Border>
+            
+            <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" Margin="20" >
+                <RadioButton x:Name="niskiRadioButton" Content="niski(latwe)" GroupName="priorytet" />
+                <RadioButton x:Name="normalnyRadioButton" Content="normalny(zwykle)" GroupName="priorytet"/>
+                <RadioButton  x:Name="wysokiRadioButton" Content="wysoki(trudne)" GroupName="priorytet"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
+                <CheckBox x:Name="CheckBox1" Content="na dworze"/>
+                <CheckBox x:Name="CheckBox2" Content="potrzebny sprzet"/>
+                <CheckBox x:Name="CheckBox3" Content="z udzialem innych kolegow"/>
+            </StackPanel>
+            
+            <Button x:Name="DodajZadanie" Grid.Row="2" Grid.Column="2" Width="80" Height="25"  Background="Black" Content="Dodaj Zadanie" Foreground="white" FontSize="9" Click="AddTask"></Button>
+            <Button Content="Podsumowanie" Grid.Row="3" Grid.Column="1"   Click="ShowSummary"/>
+            <Calendar x:Name="MyCalendar"
+                      Grid.Row="4"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="3"
+                      HorizontalAlignment="Center"
+                      Margin="10"/>
+            
+            
+            
+            <ListBox x:Name="TaskList" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"/>
+            
+        </Grid>
+    </ScrollViewer>
 </Window>

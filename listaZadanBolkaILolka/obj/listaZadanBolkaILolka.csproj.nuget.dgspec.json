@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/home/joseph/RiderProjects/listaZadanBolkaILolka/listaZadanBolkaILolka/listaZadanBolkaILolka.csproj": {}
+    "C:\\Users\\User\\RiderProjects\\BolekiLolek\\listaZadanBolkaILolka\\listaZadanBolkaILolka.csproj": {}
   },
   "projects": {
-    "/home/joseph/RiderProjects/listaZadanBolkaILolka/listaZadanBolkaILolka/listaZadanBolkaILolka.csproj": {
+    "C:\\Users\\User\\RiderProjects\\BolekiLolek\\listaZadanBolkaILolka\\listaZadanBolkaILolka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joseph/RiderProjects/listaZadanBolkaILolka/listaZadanBolkaILolka/listaZadanBolkaILolka.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\BolekiLolek\\listaZadanBolkaILolka\\listaZadanBolkaILolka.csproj",
         "projectName": "listaZadanBolkaILolka",
-        "projectPath": "/home/joseph/RiderProjects/listaZadanBolkaILolka/listaZadanBolkaILolka/listaZadanBolkaILolka.csproj",
-        "packagesPath": "/home/joseph/.nuget/packages/",
-        "outputPath": "/home/joseph/RiderProjects/listaZadanBolkaILolka/listaZadanBolkaILolka/obj/",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\BolekiLolek\\listaZadanBolkaILolka\\listaZadanBolkaILolka.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\BolekiLolek\\listaZadanBolkaILolka\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joseph/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -82,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
